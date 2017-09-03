@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">One</string>
+    <string name="app_detial">一个&#160;&#160;&#160;就够了</string>
+    <string name="app_configuration_key">AppConfigurationKey</string>
+    <string name="uuid_key">OneUUIdKey</string>
+</resources>
