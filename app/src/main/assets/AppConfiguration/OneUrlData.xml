@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <One>
     <IdListHeader>http://v3.wufazhuce.com:8000/api/onelist/idlist</IdListHeader>
+    <OneListHeader>http://v3.wufazhuce.com:8000/api/onelist</OneListHeader>
 </One>

@@ -15,12 +15,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.laoyao.normal.one.JsonModel.IdList;
+import com.laoyao.normal.one.JsonModel.OneList;
 import com.laoyao.normal.one.NetWork.OneJsonData;
 import com.laoyao.normal.one.Tools.* ;
 
 import org.w3c.dom.Text;
 import com.laoyao.normal.one.Tools.* ;
 import java.util.Random;
+
+import dalvik.system.InMemoryDexClassLoader;
 
 public class SplashActivity extends AppCompatActivity
 {
@@ -87,7 +91,8 @@ public class SplashActivity extends AppCompatActivity
                     finish();
                 }
 
-                OneJsonData.GetIdList();
+                IdList idList = OneJsonData.GetIdList();
+                OneList oneList = OneJsonData.GetOneList(idList.getData().get(0)) ;
             }
         }).start();
     }

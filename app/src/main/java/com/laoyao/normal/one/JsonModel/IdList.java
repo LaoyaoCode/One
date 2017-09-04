@@ -31,4 +31,20 @@ public class IdList
     public void setData(List<String> data) {
         this.data = data;
     }
+
+    @Override
+    public String toString()
+    {
+        StringBuilder bulider = new StringBuilder() ;
+
+        bulider.append("Res : " + res + "\n") ;
+        bulider.append("Data : ") ;
+
+        for (String temp : data)
+        {
+            bulider.append(temp + "  ") ;
+        }
+
+        return bulider.toString() ;
+    }
 }

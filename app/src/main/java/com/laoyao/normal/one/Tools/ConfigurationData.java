@@ -22,9 +22,12 @@ public class ConfigurationData
 {
     private static final String ConfigurationXMLPath = "AppConfiguration/OneUrlData.xml" ;
     private static final String RootNodeTag = "One" ;
+
     private static String IdListHeader = null ;
     private static final String ILHNodeTag = "IdListHeader" ;
 
+    private static String OneListHeader = null ;
+    private static final String OLHNodeTag = "OneListHeader" ;
 
     public static boolean Init(Context context)
     {
@@ -41,6 +44,10 @@ public class ConfigurationData
                 return false ;
             }
 
+            if((OneListHeader = GetSingleNodeText(root , OLHNodeTag)) == null)
+            {
+                return false ;
+            }
 
             return true ;
         }
@@ -67,5 +74,9 @@ public class ConfigurationData
 
     public static String getIdListHeader() {
         return IdListHeader;
+    }
+
+    public static String getOneListHeader() {
+        return OneListHeader;
     }
 }
